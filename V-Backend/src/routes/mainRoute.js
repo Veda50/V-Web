@@ -3,7 +3,7 @@ const mainRouter = express.Router();
 
 mainRouter.get('/', (req, res) => {
     res.render('template.mustache', {
-      technologies: [
+        technologies: [
             {
                 name: "ExpressJS",
                 image: "assets/img/tech/express.svg",
@@ -29,6 +29,44 @@ mainRouter.get('/', (req, res) => {
             //     image: "assets/img/tech/react.svg",
             //     description: "Library javascript untuk membangun antarmuka berbasis komponen dan Virtual DOM memungkinkan performa lebih tinggi dan reusabilitas yang baik.",
             // },
+        ],
+        gallery: [
+            {
+                title: "Account",
+                image: "assets/img/gallery/1.jpg",
+                link: "",
+                subTitle: "Authentication",
+            },
+            {
+                title: "Projects",
+                image: "assets/img/gallery/projects.png",
+                link: "",
+                subTitle: "Daftar Proyek",
+            },
+            {
+                title: "Blogs",
+                image: "assets/img/gallery/blogs.png",
+                link: "",
+                subTitle: "Tulisan Saya",
+            },
+            {
+                title: "Repositories",
+                image: "assets/img/gallery/repositories.png",
+                link: "",
+                subTitle: "Git Repository",
+            },
+            {
+                title: "Documentations",
+                image: "assets/img/gallery/documentations.png",
+                link: "",
+                subTitle: "Dokumentasi Proyek",
+            },
+            {
+                title: "Certifications",
+                image: "assets/img/gallery/certifications.png",
+                link: "",
+                subTitle: "Sertifikat Profesional",
+            },
         ],
     });
 });

@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#technologies">Technologies</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
@@ -57,29 +57,17 @@
                 </div>
             </div>
         </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <!-- Gallery Grid-->
+        <section class="page-section bg-light" id="gallery">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Gallery</h2>
+                    <h3 class="section-subheading text-muted">Koleksi Backend Developer</h3>
                 </div>
                 <div class="row">
-                    <!-- SECTION -->
-                                    <div class="col-lg-4 col-sm-6 mb-4">
-                                        <div class="portfolio-item">
-                                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                                <div class="portfolio-hover">
-                                                    <div class="portfolio-hover-content"><img src="assets/img/portfolio-hover.svg" /></div>
-                                                </div>
-                                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
-                                            </a>
-                                            <div class="portfolio-caption">
-                                                <div class="portfolio-caption-heading">Threads</div>
-                                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                    {{#gallery}}
+                        {{>partials/gallery}}
+                    {{/gallery}}
                 </div>
             </div>
         </section>
@@ -96,11 +84,7 @@
                     <li class="timeline-inverted">
                         <div class="timeline-image">
                             <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
+                                <br />Soon!
                             </h4>
                         </div>
                     </li>

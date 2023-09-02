@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 // import mongoose from "mongoose";
-import mainRouter from './routes/technologyRoute.js';
+import mainRouter from './routes/mainRoute.js';
 import mustacheExpress from 'mustache-express';
 
 import path from 'path';
