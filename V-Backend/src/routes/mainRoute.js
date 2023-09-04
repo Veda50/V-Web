@@ -2,7 +2,7 @@ import express from 'express';
 const mainRouter = express.Router();
 
 mainRouter.get('/', (req, res) => {
-    res.render('template.mustache', {
+    let data = {
         technologies: [
             {
                 name: "ExpressJS",
@@ -68,7 +68,29 @@ mainRouter.get('/', (req, res) => {
                 subTitle: "Sertifikat Profesional",
             },
         ],
-    });
+        timeline: [
+            {
+                title: "SMA 1 BAE",
+                image: "assets/img/about/1.jpg",
+                date: "2018 - 2021",
+                description: "Bersekolah di Sekolah Menengah Negeri di SMAN 1 BAE.",
+            },
+            {
+                title: "Teknik Informatika UNNES",
+                image: "assets/img/about/2.jpg",
+                date: "2021 - Present",
+                description: "Berkuliah di program didik Teknik Informatika di Universitas Negeri Semarang.",
+            }
+        ]
+    };
+
+    data.timeline.map( (d) => {
+        if( ( data.timeline.indexOf(d) % 2) == 1){
+            d.class = "timeline-inverted";
+        };
+        return d;
+    })
+    res.render('template.mustache', data);
 });
 
 export default mainRouter;
