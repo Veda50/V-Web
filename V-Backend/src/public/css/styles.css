@@ -675,17 +675,7 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-.row-tech {
-  --bs--gutter-x: 1.5rem;
-  --bs--gutter-y:0;
-  display: flex;
-  margin-top: calc(-1 * var(--bs--gutter-y));
-  margin-right: calc(-0.5 * var(--bs--gutter-x));
-  margin-left: calc(-0.5 * var(--bs--gutter-x));
-  overflow-x: auto;
-  /* flex-wrap: wrap;
-  justify-content: center; */
-}
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -1178,7 +1168,11 @@ progress {
 
   .col-md-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    min-width: 33.33333333%;
+    max-width: 60%;
+    height: auto+10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .col-md-5 {
@@ -11787,4 +11781,62 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* ADDED CLASS */
+.row-tech2 {
+  display: flex;
+width: 1320px;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 64px 128px;
+flex-wrap: wrap;
+}
+
+.row-tech1 {
+  --bs--gutter-x: 1.5rem;
+  --bs--gutter-y:0;
+  display: flex;
+  margin-top: calc(-1 * var(--bs--gutter-y));
+  margin-right: calc(-0.5 * var(--bs--gutter-x));
+  margin-left: calc(-0.5 * var(--bs--gutter-x));
+  /* overflow-x: auto; */
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+.tech-layout {
+  display: inline-flex;
+}
+
+.img-tech {
+  display: block;
+  border-radius: 100px;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.tech-desc {
+  display: none;
+}
+
+.img-tech:hover + .tech-desc {
+  display: block;
+  height: 128px;
+  background-color: var(--bs-white);
+  border: 2px solid var(--bs-yellow);
+  border-radius: 100px;
+  text-align: justify;
+  padding-left: 140px;
+  padding-right: 64;
+  padding-top: 5px;
+  z-index: -1;
+  align-items: flex-end;
+  height: 128px;
+}
+
+.img-tech:hover {
+  box-shadow: 2px 2px 10px;
 }
