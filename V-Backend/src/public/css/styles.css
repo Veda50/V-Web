@@ -11782,8 +11782,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 /* ADDED CLASS */
 .tech-layout {
   flex: 0 0 auto;
-  width: 33.33333333%;
-  /* min-width: 20%; */
+  max-width: 50%;
+  min-width: 20%;
   padding-left: 1%;
   padding-right: 1%;
 }

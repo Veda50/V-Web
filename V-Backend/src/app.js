@@ -29,7 +29,6 @@ app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
-
 app.use(express.static(__dirname + '/public'));
 
 // ROUTING

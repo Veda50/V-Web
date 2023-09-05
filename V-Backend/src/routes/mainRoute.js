@@ -19,16 +19,16 @@ mainRouter.get('/', (req, res) => {
                 image: "assets/img/tech/mustache.svg",
                 description: "Template engine logic-less yang diterapkan untuk merender halaman utama website di sisi server."
             },
-            // {
-            //     name: "MongoDB",
-            //     image: "assets/img/tech/mongodb.svg",
-            //     description: "Salah satu NoSQL database, berbasis dokumen yang memiliki skalabilitas dan performa tinggi.",
-            // },
-            // {
-            //     name: "React",
-            //     image: "assets/img/tech/react.svg",
-            //     description: "Library javascript untuk membangun antarmuka berbasis komponen dan Virtual DOM memungkinkan performa lebih tinggi dan reusabilitas yang baik.",
-            // },
+            {
+                name: "MongoDB",
+                image: "assets/img/tech/mongodb.svg",
+                description: "Salah satu NoSQL database, berbasis dokumen yang memiliki skalabilitas dan performa tinggi.",
+            },
+            {
+                name: "React",
+                image: "assets/img/tech/react.svg",
+                description: "Library javascript untuk membangun antarmuka berbasis komponen dan Virtual DOM memungkinkan performa lebih tinggi dan reusabilitas yang baik.",
+            },
         ],
         gallery: [
             {
