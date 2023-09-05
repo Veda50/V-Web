@@ -675,17 +675,7 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-.row-tech {
-  --bs--gutter-x: 1.5rem;
-  --bs--gutter-y:0;
-  display: flex;
-  margin-top: calc(-1 * var(--bs--gutter-y));
-  margin-right: calc(-0.5 * var(--bs--gutter-x));
-  margin-left: calc(-0.5 * var(--bs--gutter-x));
-  overflow-x: auto;
-  /* flex-wrap: wrap;
-  justify-content: center; */
-}
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -11787,4 +11777,26 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* ADDED CLASS */
+.tech-layout {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  /* min-width: 20%; */
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.row-tech {
+  --bs--gutter-x: 1.5rem;
+  --bs--gutter-y:0;
+  display: flex;
+  margin-top: calc(-1 * var(--bs--gutter-y));
+  margin-right: calc(-0.5 * var(--bs--gutter-x));
+  margin-left: calc(-0.5 * var(--bs--gutter-x));
+  /* overflow-x: auto; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
 }
