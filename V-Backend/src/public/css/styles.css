@@ -11469,7 +11469,7 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 200, 0, 0.9);
+  background: rgba(255, 166, 0, 0.9);
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -11477,7 +11477,10 @@ header.masthead .masthead-heading {
 }
 #gallery .gallery-item .gallery-link .gallery-hover .gallery-hover-content {
   font-size: 1.25rem;
+  font-style: oblique;
   color: white;
+  display: flex;
+  justify-content: flex-start;
 }
 #gallery .gallery-item .gallery-link:hover .gallery-hover {
   opacity: 1;
