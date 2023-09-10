@@ -12,15 +12,6 @@ const __dirname = path.dirname(__filename);
 
 dotenv.config();
 
-// MONGODB CONFIG
-// mongoose.connect(`${process.env.MongoosePort}/${process.env.MongooseDB}`, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
-// const mongodb = mongoose.connection;
-// mongodb.on('error', (error) => console.log(error));
-// mongodb.once('open', () => console.log('Database Connected...'));
-
 const app = express();
 
 // MUSTACHE CONFIG
@@ -29,6 +20,7 @@ app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
+app.use("/bootstrap",express.static("../node_modules/bootstrap"));
 app.use(express.static(__dirname + '/public'));
 
 // ROUTING

@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/app",
-    "dev": "nodemon --config nodemon.json"
+    "start": "node src/app",
+    "dev": "nodemon -e js,mustache,css src/app.js",
+    "sass": "sass src/public/scss/main.scss src/public/css/bootstrap.css"
   },
   "keywords": [
     "website",

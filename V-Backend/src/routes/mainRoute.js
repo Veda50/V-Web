@@ -11,7 +11,7 @@ mainRouter.get('/', (req, res) => {
             },
             {
                 name: "Bootstrap",
-                image: "assets/img/tech/bootsrap.svg",
+                image: "assets/img/tech/bootstrap.svg",
                 description: "Template sekaligus kerangka kerja frontend untuk membangun tampilan dan antarmuka pada halaman utama.",  
             },
             {

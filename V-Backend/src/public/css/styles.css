@@ -62,6 +62,10 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+
+  --v-primary-bg: #333333;
+  --v-secondary-bg: #282828;
+  --v-main-color: #FFA500;
 }
 
 *,
@@ -84,7 +88,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: var(--v-primary-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -3032,8 +3036,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #ffc800;
-  border-color: #ffc800;
+  background-color: var(--v-main-color);
+  border-color: var(--v-main-color);
 }
 .btn-primary:hover {
   color: #fff;
@@ -3954,7 +3958,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #cca000;
+  color: var(--v-main-color);
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -7773,7 +7777,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: var(--bs-yellow) !important;
 }
 
 .text-black-50 {
@@ -11481,7 +11485,7 @@ header.masthead .masthead-heading {
 #gallery .gallery-item .gallery-caption {
   padding: 1.5rem;
   text-align: center;
-  background-color: #fff;
+  background-color: var(--v-primary-bg);
 }
 #gallery .gallery-item .gallery-caption .gallery-caption-heading {
   font-size: 1.5rem;
@@ -11547,7 +11551,7 @@ header.masthead .masthead-heading {
   width: 2px;
   margin-left: -1.5px;
   content: "";
-  background-color: #e9ecef;
+  background-color: var(--v-main-color);
 }
 .timeline > li {
   position: relative;
@@ -11589,7 +11593,7 @@ header.masthead .masthead-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid var(--v-main-color);
   border-radius: 100%;
   background-color: #ffc800;
 }
@@ -11799,4 +11803,29 @@ section#contact form#contactForm :-ms-input-placeholder {
   justify-content: space-around;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.bg-alt {
+  /* --bs-bg-opacity: 1;
+  background-color: rgba(var(40, 40, 40), var(--bs-bg-opacity)) !important; */
+  background-color: var(--v-secondary-bg);
+}
+
+.h-text-color {
+  color: var(--v-main-color);
+}
+
+.popover {
+  border: 2px solid var(--v-main-color);
+  box-shadow: 2px 2px 2px black;
+}
+
+.popover-header {
+  background-color: var(--v-main-color);
+  color: var(--bs-white);
+}
+
+.popover-body {
+  background-color: var(--v-primary-bg);
+  color: var(--bs-white);
 }
