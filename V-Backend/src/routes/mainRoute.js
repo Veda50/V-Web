@@ -29,6 +29,11 @@ mainRouter.get('/', (req, res) => {
                 image: "assets/img/tech/react.svg",
                 description: "Library javascript untuk membangun antarmuka berbasis komponen dan Virtual DOM memungkinkan performa lebih tinggi dan reusabilitas yang baik.",
             },
+            {
+                name: "Tailwind",
+                image: "assets/img/tech/react.svg",
+                description: "Kerangka kerja css untuk membangun tampilan yang dinamis pada halaman client side dengan cepat dan efisien dengan menggunakan kelas-kelas utility yang telah tersedia."
+            }
         ],
         gallery: [
             {
