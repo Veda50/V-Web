@@ -32,10 +32,10 @@ mainRouter.get('/', (req, res) => {
         ],
         gallery: [
             {
-                title: "Account",
+                title: "About",
                 image: "assets/img/gallery/1.jpg",
                 link: "",
-                subTitle: "Authentication",
+                subTitle: "Data Diri",
             },
             {
                 title: "Projects",
