@@ -1,19 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors')
-
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    colors: {
-      main: '#FFA500',
-      black: colors.black,
-      white: colors.white,
-      red: colors.red,
-      primaryBg: '#333333',
-      secondaryBg: '#282828',
-      smoke: '#a1a8a6',
+    extend: {
+      colors: {
+        text: '#ffffff',
+        background: '#130d01',
+        primary: '#ffa600',
+        secondary: '#3f2a03',
+        accent: '#f3a81b',
+      }
     }
   },
   plugins: [],

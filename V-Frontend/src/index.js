@@ -4,11 +4,17 @@ import './index.css';
 // import App from './App';
 import Dev from './pages/dev'
 import reportWebVitals from './reportWebVitals';
+import Sidebar from './components/sidebar';
+import Navbar from './components/navbar'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Dev />
+    <Navbar />
+    <div className='inline-flex w-full'>
+      <Sidebar />
+      <Dev />
+    </div>
   </React.StrictMode>
 );
 
