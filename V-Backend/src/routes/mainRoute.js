@@ -1,7 +1,7 @@
 import express from 'express';
 const mainRouter = express.Router();
 
-mainRouter.get('/', (req, res) => {
+export default mainRouter.get('/', (req, res) => {
     let data = {
         technologies: [
             {
@@ -32,7 +32,7 @@ mainRouter.get('/', (req, res) => {
             {
                 name: "Tailwind",
                 image: "assets/img/tech/tailwind.svg",
-                description: "Kerangka kerja css untuk membangun tampilan yang dinamis pada halaman client side dengan cepat dan efisien dengan menggunakan kelas-kelas utility yang telah tersedia."
+                description: "Kerangka kerja css untuk membangun tampilan yang dinamis pada halaman client side dengan cepat dan efisien menggunakan kelas-kelas utility yang telah tersedia."
             }
         ],
         gallery: [
@@ -97,5 +97,3 @@ mainRouter.get('/', (req, res) => {
     })
     res.render('template.mustache', data);
 });
-
-export default mainRouter;
